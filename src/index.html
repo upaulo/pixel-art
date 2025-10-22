@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pixel Art</title>
+</head>
+<body>
+  <main>
+
+    <div id="controls">
+      <div id="color-palette">
+        <button id="button-random-color"><img src="./assets/random.png" alt="Random Colors"></button>
+        <label for="input-custom-color"><img src="./assets/palette-board.png" alt="Palette of Colors"></label>
+        <input type="color" id="input-custom-color" name="input-custom-color">
+        <div id="colors"></div>
+      </div>
+
+      <div id="board-control">
+        <input type="number" id="board-size-input" min="1" placeholder="Board Size">
+        <button id="border-toggle"><img src="./assets/borderless.png" alt="Border Toggle"></button>
+        <button id="clear-board" aria-label="Clear Board"><img src="./assets/clear.png" alt="Clear"></button>
+      </div>
+    </div>
+
+    <div id="error-message" style="display: none;"></div>
+    <div id="pixel-board"></div>
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background-color: #242632;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#color-palette {
+  display: flex;
+  width: 100%;
+  min-height: 173px;
+  max-width: 240px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+}
+
+#colors {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.selected {
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+}
+
+#board-control {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 173px;
+  max-width: 225px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+}
+
+#board-size-input {
+  appearance: textfield;
+  max-width: 120px;
+  cursor: text;
+}
+
+#error-message {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+
+#pixel-board {
+  display: grid;
+  min-height: 210px;
+  min-width: 210px;
+  align-content: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.pixel {
+  cursor: pointer;
+}
+
+.with-border {
+  width: 42px;
+  height: 42px;
+  border: solid 1px black;
+}
+
+.borderless {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+img {
+  height: 36px;
+}
+
+button, label {
+  background-color: rgba(255, 255, 255, 10%);
+}
+
+button, label, input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#input-custom-color {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
